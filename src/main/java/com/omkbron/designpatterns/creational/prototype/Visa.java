@@ -19,7 +19,7 @@ public class Visa implements PrototypeCard {
 
   @Override
   public void getCard() {
-    log.info("This is a Visa Card");
+    log.info("This is a {}", name);
   }
 
   @Override
