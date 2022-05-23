@@ -13,7 +13,7 @@ public class PaymentFactory {
       case APPLE_PAY:
         return new ApplePayment();
       default:
-        return new CreditCardPayment();
+        throw new IllegalArgumentException("Payment type not supported.");
     }
   }
 }
